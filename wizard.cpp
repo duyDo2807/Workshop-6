@@ -9,5 +9,10 @@ void Wizard::castSpell(Player* opponent) {
               << " for " << damage << " damage.\n";
     opponent->takeDamage(damage);
     mana = mana - damage;
+  } else if (mana > 0) {
+    std::cout << getName() << " casts a spell on " << opponent->getName()
+              << " for " << mana << " damage.\n";
+    opponent->takeDamage(mana);
+    mana = mana - mana;
   }
 }
