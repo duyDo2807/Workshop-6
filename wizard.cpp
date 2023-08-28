@@ -4,7 +4,7 @@ Wizard::Wizard(std::string name, int health, int damage, int mana)
     : Player(name, health, damage), mana(mana) {}
 
 void Wizard::castSpell(Player* opponent) {
-  if (mana > getDamage()) {
+  if (mana >= getDamage()) {
     std::cout << getName() << " casts a spell on " << opponent->getName()
               << " for " << getDamage() << " damage.\n";
     opponent->takeDamage(getDamage());
