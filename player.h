@@ -4,7 +4,7 @@
 #include <string>
 
 class Player {
- private:
+ protected:
   std::string name;
   int health;
   int damage;
@@ -15,7 +15,6 @@ class Player {
   void takeDamage(int damage);
   int getHealth();
   std::string getName();
-  int getDamage();
 };
 
 #endif

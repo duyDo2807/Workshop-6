@@ -16,5 +16,3 @@ void Player::takeDamage(int damage) {
 int Player::getHealth() { return health; }
 
 std::string Player::getName() { return name; }
-
-int Player::getDamage() { return damage; }
